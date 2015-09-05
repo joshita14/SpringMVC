@@ -13,7 +13,8 @@
    <bean id="handlermapping"  class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
    <bean name="welcome.jsp" class="com.springmvc.HelloController"/> -->
    
-   <!-- Here we have to specify the controller package and not the controller path, the front controller will itself search for the package -->
+   <!-- Here we have to specify the controller package and not the controller path, the front controller will itself search for the controller based on the URL
+   It knows all the controller and their mapping -->
    <context:component-scan base-package="com.springmvc" />
    
    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
