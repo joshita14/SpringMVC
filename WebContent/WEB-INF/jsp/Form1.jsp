@@ -9,7 +9,7 @@
 <body>
    <h1>Spring MVC Http Method Example</h1>
  
-   <form action="/SpringMVC/form1.html" method="post">
+   <form action="/SpringMVC/studentdetails.html" method="post">
       <p>
            Student Name : <input type ="text" name="studentname"/>
            

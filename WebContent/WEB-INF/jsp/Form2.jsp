@@ -4,11 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>First MVC Application</title>
+<title>MVC Application</title>
 </head>
 <body>
-   <h1>Woohaah  the http request is fullfilled	</h1>
-   <h2>${message}</h2>
-   <h2>${message1}</h2>
+   <h1>Wooh the http request is fullfilled	</h1>
+   <h2>${obj1}</h2>
+   <table>
+	   <tr>
+	       <td>Student Name : </td>
+		   <td>
+		      ${obj2.studentname}
+		   </td>
+		   
+		   <td>Student Hobby : </td>
+		   <td>
+		      ${obj2.studentvalue}
+		   </td>
+	   </tr>
+   </table>
 </body>
 </html>
