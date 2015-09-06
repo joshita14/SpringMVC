@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Notice here that the @RequestParam is replaced by @ModelAttribute("student1") Student s
+ * We don't need to even add the object to the model object
  * @author joshita
  *
  */
@@ -22,11 +23,10 @@ public class HttpMethodAndPojoModelAttributeObject {
 		return model;
 	}
 	@RequestMapping(value ="/studentdetails1.html")
-	private ModelAndView test2(@ModelAttribute("student1") Student s){
+	private ModelAndView test2(@ModelAttribute("obj1") Student s){
 		
 	    //passing the complete student student object, but the code should be optimised , because we have to create object each and everytime
 		ModelAndView model = new ModelAndView( "Form2" );
-		model.addObject("obj1","Passing the complete student object" );
 		
 		return model;
 	}

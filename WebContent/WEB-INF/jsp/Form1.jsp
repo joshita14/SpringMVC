@@ -8,14 +8,33 @@
 </head>
 <body>
    <h1>Spring MVC Http Method Example</h1>
- 
-   <form action="/SpringMVC/studentdetails.html" method="post">
+   <h2>${obj1}</h2>
+   <form action="/SpringMVC/studentdetails3.html" method="post">
       <p>
            Student Name : <input type ="text" name="studentname"/>
            
       </p>
       <p>
-           Student Hobby : <input type ="text" name="studenthobby"/>
+           Student Hobby : <input type ="text" name="studentvalue"/>
+           
+      </p>
+      
+       <p>
+           Student Mobile No : <input type ="text" name="studentMobileNo"/>
+           
+      </p>
+      
+       <p>
+           Date : <input type ="text" name="date"/>
+           
+      </p>
+      
+       <p>
+           Student Skills : <select name="studentSkills" multiple>
+                            <option value ="JAVA Skills">Java Skills</option>
+                            <option value ="C Skills">C Skills</option>
+                            <option value ="C++ Skills">C++ Skills</option>
+                            </select>
            
       </p>
       <input type="submit" value="Click here"/>

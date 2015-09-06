@@ -8,17 +8,32 @@
 </head>
 <body>
    <h1>Wooh the http request is fullfilled	</h1>
-   <h2>${obj1}</h2>
+   <h2>${obj1}</h2>  
    <table>
 	   <tr>
 	       <td>Student Name : </td>
 		   <td>
-		      ${obj2.studentname}
+		      ${obj1.studentname}
 		   </td>
 		   
 		   <td>Student Hobby : </td>
 		   <td>
-		      ${obj2.studentvalue}
+		      ${obj1.studentvalue}
+		   </td>
+		   
+		   <td>Date : </td>
+		   <td>
+		      ${obj1.date}
+		   </td>
+		   
+		   <td>Student Mobile No : </td>
+		   <td>
+		      ${obj1.studentMobileNo}
+		   </td>
+		   
+		   <td>Student Skills : </td>
+		   <td>
+		      ${obj1.studentSkills}
 		   </td>
 	   </tr>
    </table>
