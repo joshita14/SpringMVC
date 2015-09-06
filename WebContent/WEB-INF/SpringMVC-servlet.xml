@@ -1,4 +1,4 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
+ <beans xmlns="http://www.springframework.org/schema/beans"
    xmlns:context="http://www.springframework.org/schema/context"
    xmlns:mvc="http://www.springframework.org/schema/mvc"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -18,8 +18,7 @@
    
    <!-- Here we have to specify the controller package and not the controller path, the front controller will itself search for the controller based on the URL
    It knows all the controller and their mapping -->
-   <context:component-scan base-package="com.springmvc" />
-   
+   <context:component-scan base-package="com.springmvc.httpmethods" />
    <mvc:annotation-driven/>
    
    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
